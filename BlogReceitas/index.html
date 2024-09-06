@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Deliciosas</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="Imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Imagens/favicon-16x16.png">
+    <link rel="manifest" href="Imagens/site.webmanifest">
+
+    <script src="JavaScript/javascript.js"></script>
+    <link rel="stylesheet" href="Styles/Styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Receitas Deliciosas</h1>
+        <p>Explorando os sabores da cozinha</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#recipes">Receitas</a></li>
+            <li><a href="#about">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="recipes">
+        <div class="recipe-card" data-receita="receita1">
+            <img src="Imagens/boludo.png" alt="Bolo de Chocolate">
+            <h3>Receita 1: Bolo de Chocolate</h3>
+            <p>Um bolo de chocolate fofinho e delicioso que vai agradar toda a família.</p>
+        </div>
+        <div class="recipe-card" data-receita="receita2">
+            <img src="Imagens/lasanha.png" alt="Lasanha de Frango">
+            <h3>Receita 2: Lasanha de Frango</h3>
+            <p>Uma lasanha cremosa com recheio de frango desfiado e muito queijo.</p>
+        </div>
+        <div class="recipe-card" data-receita="receita3">
+            <img src="Imagens/salada.jpg" alt="Salada Grega">
+            <h3>Receita 3: Salada Grega</h3>
+            <p>Uma salada refrescante com ingredientes frescos e saborosos.</p>
+        </div>
+    </div>
+    
+
+    <!-- Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Detalhes da Receita</h3>
+            <p id="recipe-details"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Receitas Deliciosas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
